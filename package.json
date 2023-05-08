@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "textlint": "^12.6.1",
+    "textlint-rule-no-dropping-the-ra": "^3.0.0"
+  }
+}
