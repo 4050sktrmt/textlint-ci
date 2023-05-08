@@ -2,6 +2,7 @@ name: Run textlint
 on: [push, pull_request]
 jobs:
   test:
+    name: Test
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -13,7 +14,7 @@ jobs:
     - name: Install packages
       run: npm ci
     - name: Run textlint (Red)
-      # continue-on-error: true
+      continue-on-error: true
       run: npx textlint sample/red.md
     - name: Run textlint (Green)
       run: npx textlint sample/green.md
