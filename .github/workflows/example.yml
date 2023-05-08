@@ -13,7 +13,7 @@ jobs:
     - name: Install packages
       run: npm ci
     - name: Run textlint (Red)
-      continue-on-error: true
+      # continue-on-error: true
       run: npx textlint sample/red.md
     - name: Run textlint (Green)
       run: npx textlint sample/green.md
